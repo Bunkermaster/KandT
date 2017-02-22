@@ -1,3 +1,6 @@
+<?php
+include 'functions.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +17,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Teletubbies</a></li>
-                <li><a href="kittens.php">Kittens</a></li>
-                <li><a href="ironmaiden.php">Iron Maiden</a></li>
+                <li<?=isActive('index.php')?>><a href="index.php">Teletubbies</a></li>
+                <li<?=isActive('kittens.php')?>><a href="kittens.php">Kittens</a></li>
+                <li<?=isActive('ironmaiden.php')?>><a href="ironmaiden.php">Iron Maiden</a></li>
+                <li<?=isActive('chloe.php')?>><a href="chloe.php">Chlo&eacute;</a></li>
             </ul>
         </div>
     </div>
