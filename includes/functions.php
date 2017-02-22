@@ -1,7 +1,7 @@
 <?php
-function isActive($page)
+function isActive($startPage, $page)
 {
-    if($_SERVER['REQUEST_URI'] === '/'.$page){
+    if($startPage === $page){
         return ' class="active"';
     }
 }
