@@ -17,10 +17,10 @@ include 'functions.php';
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li<?=isActive($startPage, 'teletubbies')?>><a href="index.php">Teletubbies</a></li>
-                <li<?=isActive($startPage, 'kittens')?>><a href="index.php?page=kittens">Kittens</a></li>
-                <li<?=isActive($startPage, 'ironmaiden')?>><a href="index.php?page=ironmaiden">Iron Maiden</a></li>
-                <li<?=isActive($startPage, 'chloe')?>><a href="index.php?page=chloe">Chlo&eacute;</a></li>
+                <li<?=isActive($targetPage, 'teletubbies')?>><a href="index.php">Teletubbies</a></li>
+                <li<?=isActive($targetPage, 'kittens')?>><a href="index.php?page=kittens">Kittens</a></li>
+                <li<?=isActive($targetPage, 'ironmaiden')?>><a href="index.php?page=ironmaiden">Iron Maiden</a></li>
+                <li<?=isActive($targetPage, 'chloe')?>><a href="index.php?page=chloe">Chlo&eacute;</a></li>
             </ul>
         </div>
     </div>
