@@ -15,12 +15,12 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':slug', $targetPage);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
-//var_dump($row);
+print_r($row);
 //die();
 include "includes/header.php";
 // si la page demandee existe, je l'affiche
-if(file_exists(__DIR__."/".$targetPage.".php")){
-    include $targetPage.".php";
+if ($row !== false) {
+    include "template.php";
 } else {
     // sinon, j'affiche une erreur
     header("HTTP/1.0 404 Not Found");
