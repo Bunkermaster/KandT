@@ -15,8 +15,6 @@ $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':slug', $targetPage);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
-print_r($row);
-//die();
 // si la page demandee existe, je l'affiche
 if ($row !== false) {
     include "includes/header.php";
